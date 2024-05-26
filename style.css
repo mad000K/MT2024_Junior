@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 2em;
+}
+
+#new-note {
+    margin-bottom: 2em;
+}
+
+#note-title,
+#note-content {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+#add-note {
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#notes {
+    list-style: none;
+    padding: 0;
+}
+
+.note {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.note .note-title {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.note .note-date {
+    font-size: 0.8em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+.note .actions {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.note .actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 0.5em;
+}
+
+.note.archived {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
